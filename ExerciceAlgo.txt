@@ -1,0 +1,39 @@
+Fonction Somme5(a,b,c,d,e en entier) en entier
+	renvoyer a+b+c+d+e
+Fin fonction
+
+
+
+-----------------------------------
+-----------------------------------
+
+
+Fonction NombreVoyelle(a en caractère) en entier
+	var i,nb en entier
+	nb <-- 0
+	pour i <-- 1 à len(a)
+		Si Trouve("aeiouy",mid(a,i,1)) <> 0 alors
+			nb = nb + 1
+		Finsi
+	i suivant
+	Renvoyer nb
+Fin Fonction
+
+
+-----------------------------------
+-----------------------------------
+
+
+
+
+
+Fonction Trouver(a,b en caractère) en entier
+var i,limite en entier	
+	Si len(b)>len(a) alors
+		renvoyer 0
+	Sinon
+		Pour i <-- 1 à len(a)-len(b)+1
+			Si mid(a,i,len(b)) = b alors
+				renvoyer i
+		i suivant
+FinFonction
